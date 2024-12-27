@@ -76,14 +76,14 @@ public class MainActivity extends AppCompatActivity {
 
                     if(isLoggedIn) {//로그인했다면 UserListActivity를 뷰에 표시
                         //UserListActivity를 뷰에 표시
-                        //Intent intent = new Intent(MainActivity.this, UserlistActivity.class);
-                        //startActivity(intent);
-                        Toast.makeText(MainActivity.this,"UserlistActivity 표시",Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(MainActivity.this, UserlistActivity.class);
+                        startActivity(intent);
+                        //Toast.makeText(MainActivity.this,"UserlistActivity 표시",Toast.LENGTH_SHORT).show();
 
                     }else{
-                        //Intent intent = new Intent(MainActivity.this, LoginActivity.class);
-                        //startActivity(intent);
-                        Toast.makeText(MainActivity.this,"LoginActivity 표시",Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+                        startActivity(intent);
+                        //Toast.makeText(MainActivity.this,"LoginActivity 표시",Toast.LENGTH_SHORT).show();
                     }
                 }
             }
